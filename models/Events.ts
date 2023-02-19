@@ -27,6 +27,6 @@ const EventSchema = new schema({
         },
         images: [String],
     },
-})
+}, {versionKey: false})
 
 export default mongoose.model('Events', EventSchema)

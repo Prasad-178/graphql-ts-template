@@ -28,6 +28,6 @@ const NgoSchema = new schema({
         }
     },
     events: [String]
-})
+}, {versionKey: false})
 
 export default mongoose.model('Ngo', NgoSchema)

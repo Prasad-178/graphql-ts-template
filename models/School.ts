@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import StudentData from "./StudentData";
 
 const schema = mongoose.Schema
 
@@ -27,6 +28,6 @@ const SchoolSchema = new schema({
             required: true
         }
     }
-})
+}, {versionKey: false})
 
 export default mongoose.model('School', SchoolSchema)
