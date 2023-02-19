@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const port = process.env.PORT;
+const mongodb_password = process.env.MONGODB_PASSWORD
 
 // You may use this as a boolean value for different situations
 // const env = {
@@ -13,4 +14,4 @@ const port = process.env.PORT;
 // };
 
 // export { port, env };
-export { port }
+export { port, mongodb_password }
