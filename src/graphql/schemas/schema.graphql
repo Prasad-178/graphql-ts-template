@@ -1,0 +1,20 @@
+scalar Date
+
+type ApiKey {
+  key: String
+  admin:Boolean
+  createdAt: Date
+}
+
+type Query{
+  getKeys: [ApiKey]
+}
+
+type Mutation {
+  addApiKey(admin:Boolean,key:String): ApiKey
+}
+
+input apiInput {
+  admin: Boolean!
+  key: String!
+}

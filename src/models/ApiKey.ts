@@ -5,7 +5,8 @@ const schema = mongoose.Schema
 const ApiKeySchema = new schema({
     key: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     admin: {
         type: Boolean,
