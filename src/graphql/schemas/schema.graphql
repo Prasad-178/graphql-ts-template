@@ -11,7 +11,7 @@ type Query{
 }
 
 type Mutation {
-  addApiKey(admin:Boolean,key:String): ApiKey
+  addApiKey(input: apiInput): ApiKey
 }
 
 input apiInput {

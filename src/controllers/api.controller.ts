@@ -14,10 +14,12 @@ export class ApiController {
   }
 
   addApiKey(args:any,ctx:Context){
-    return ApiKey.create({...args,createdAt:new Date()}).then((NewApiKey:any)=>{
+    // const apiKey = { args }
+    console.log(args.input)
+    console.log(args.input.admin)
+    // console.log(apiKey.args.)
+    return ApiKey.create({...args.input,createdAt:new Date()}).then((NewApiKey:any)=>{
       return NewApiKey;
     })
-    console.log("donee")
-
   }
 }

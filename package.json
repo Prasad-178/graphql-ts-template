@@ -2,12 +2,12 @@
   "name": "graphql-mongodb-typescript-blog",
   "version": "1.0.0",
   "description": "Blog starter with GraphQL,Typescript,MongoDB",
-  "main": "dist/server.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && nodemon dist/server.js",
+    "start": "npm run build && nodemon dist/index.js",
     "build": "tsc -p . && ncp src/graphql/schemas/ dist/graphql/schemas",
     "start:dev": "npm run build:dev",
-    "build:dev": "nodemon src/server.ts --exec ts-node src/server.ts -e ts,graphql"
+    "build:dev": "nodemon src/index.ts --exec ts-node src/index.ts -e ts,graphql"
   },
   "keywords": [
     "nodejs",
@@ -20,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/compression": "^0.0.36",
+    "@types/cookie-parser": "^1.4.3",
     "@types/graphql": "^14.5.0",
     "@types/graphql-depth-limit": "^1.1.3",
     "@types/jsonwebtoken": "^9.0.1",
@@ -33,6 +34,7 @@
     "apollo-server-express": "^3.11.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

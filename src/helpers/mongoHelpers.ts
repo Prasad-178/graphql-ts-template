@@ -1,7 +1,6 @@
 const User = require('../models/users');
 import mongoose = require('mongoose');
 import * as jwt from 'jsonwebtoken';
-import { Config } from '../config';
 export class MongoHelper {
   /**
    * This function returns either true of false based information present in the database
